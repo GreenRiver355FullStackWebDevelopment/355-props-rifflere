@@ -1,7 +1,7 @@
 function RestaurantsContainer() {
   return (
     <div className="restaurantContainer">
-
+      <p> Restaurants Container Rendered </p>
     </div>
   );
 }
