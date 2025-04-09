@@ -1,7 +1,12 @@
+import Restaurant from "./Restaurant";
+import { restaurants } from "../data/data.js";
+
 function RestaurantsContainer() {
   return (
     <div className="restaurantContainer">
-      <p> Restaurants Container Rendered </p>
+      {restaurants.map((restaurant) => (
+        <Restaurant restaurant={restaurant} key={restaurant.id} />
+      ))}
     </div>
   );
 }
